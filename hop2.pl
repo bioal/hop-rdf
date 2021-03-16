@@ -161,54 +161,67 @@ sub organism_to_ttl {
     close(ORGANISM);
 
     print "branch:1 a hop:Branch ;\n";
+	print "    dct:identifier 1 ;\n";
     print "    rdfs:label \"Mammals\".\n";
 	print "\n";
 
     print "branch:2 a hop:Branch ;\n";
+	print "    dct:identifier 2 ;\n";
     print "    rdfs:label \"Other vertebrates\".\n";
 	print "\n";
 
     print "branch:3 a hop:Branch ;\n";
+	print "    dct:identifier 3 ;\n";
     print "    rdfs:label \"Lancelets/tunicates\".\n";
 	print "\n";
 
     print "branch:4 a hop:Branch ;\n";
+	print "    dct:identifier 4 ;\n";
     print "    rdfs:label \"Echinoderms/hemichordata\".\n";
 	print "\n";
 
     print "branch:5 a hop:Branch ;\n";
+	print "    dct:identifier 5 ;\n";
     print "    rdfs:label \"Arthropods\".\n";
 	print "\n";
 
     print "branch:6 a hop:Branch ;\n";
+	print "    dct:identifier 6 ;\n";
     print "    rdfs:label \"Nematodes\".\n";
 	print "\n";
 
     print "branch:7 a hop:Branch ;\n";
+	print "    dct:identifier 7 ;\n";
     print "    rdfs:label \"Cnidaria\".\n";
 	print "\n";
 
     print "branch:8 a hop:Branch ;\n";
+	print "    dct:identifier 8 ;\n";
     print "    rdfs:label \"Sponge/Placozoa\".\n";
 	print "\n";
 
     print "branch:9 a hop:Branch ;\n";
+	print "    dct:identifier 9 ;\n";
     print "    rdfs:label \"Choanoflagellates\".\n";
 	print "\n";
 
     print "branch:10 a hop:Branch ;\n";
+	print "    dct:identifier 10 ;\n";
     print "    rdfs:label \"Fungi\".\n";
 	print "\n";
 
     print "branch:11 a hop:Branch ;\n";
+	print "    dct:identifier 11 ;\n";
     print "    rdfs:label \"Amoebozoa\".\n";
 	print "\n";
 
     print "branch:12 a hop:Branch ;\n";
+	print "    dct:identifier 12 ;\n";
     print "    rdfs:label \"Plantae\".\n";
 	print "\n";
 
     print "branch:13 a hop:Branch ;\n";
+	print "    dct:identifier 13 ;\n";
     print "    rdfs:label \"Other protists\".\n";
 	print "\n";
 
