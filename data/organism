@@ -1,0 +1,177 @@
+1	Homo sapiens	Human	1	Mammals	M
+2	Pan troglodytes	Chimpanzee	1	Mammals	M
+3	Gorilla gorilla gorilla	Gorilla	1	Mammals	M
+4	Pongo abelii	Orangutan	1	Mammals	M
+5	Nomascus leucogenys	Gibbon	1	Mammals	M
+6	Macaca mulatta	Macaca	1	Mammals	M
+7	Papio anubis	Baboon	1	Mammals	M
+8	Saimiri boliviensis	Squirrel Monkey	1	Mammals	M
+9	Callithrix jacchus	Marmoset	1	Mammals	M
+10	Otolemur garnettii	Lemur	1	Mammals	M
+11	Mus musculus	Mouse	1	Mammals	M
+12	Cricetulus griseus	Hamster	1	Mammals	M
+13	Rattus norvegicus	Rat	1	Mammals	M
+14	Cavia porcellus	Guinea Pig	1	Mammals	M
+15	Oryctolagus cuniculus	Rabbit	1	Mammals	M
+16	Canis lupus familiaris	Dog	1	Mammals	M
+17	Ailuropoda melanoleuca	Panda	1	Mammals	M
+18	Equus caballus	Horse	1	Mammals	M
+19	Sus scrofa	Pig	1	Mammals	M
+20	Bos taurus	Cow	1	Mammals	M
+21	Trichechus manatus latirostris	Manatee	1	Mammals	M
+22	Loxodonta africana	Elephant	1	Mammals	M
+23	Monodelphis domestica	Opossum	1	Mammals	M
+24	Sarcophilus harrisii	Tasmanian Devil	1	Mammals	M
+25	Ornithorhynchus anatinus	Platypus	1	Mammals	M
+26	Gallus gallus	Chicken	2	Other vertebrates	V
+27	Taeniopygia guttata	Finch	2	Other vertebrates	V
+28	Anolis carolinensis	American Anole	2	Other vertebrates	V
+29	Chelonia mydas	Turtle	2	Other vertebrates	V
+30	Xenopus (Silurana) tropicalis	Frog	2	Other vertebrates	V
+31	Danio rerio	Zebrafish	2	Other vertebrates	V
+32	Oreochromis niloticus	Tilapia	2	Other vertebrates	V
+33	Oryzias latipes	Medaka	2	Other vertebrates	V
+34	Tetraodon nigroviridis	Pufferfish	3	Lancelets/tunicates	LT
+35	Branchiostoma floridae	Lancet	3	Lancelets/tunicates	LT
+36	Ciona intestinalis	Ciona	3	Lancelets/tunicates	LT
+37	Oikopleura dioica	Sea-squirt	3	Lancelets/tunicates	LT
+38	Strongylocentrotus purpuratus	Sea Urchin	4	Echinoderms/hemichordata	EH
+39	Crassostrea gigas	Oyster	4	Echinoderms/hemichordata	EH
+40	Saccoglossus kowalevskii	Acorn Worm	4	Echinoderms/hemichordata	EH
+41	Capitella teleta	Capitella Worm	4	Echinoderms/hemichordata	EH
+42	Acyrthosiphon pisum	Pea Aphid	5	Arthropods	A
+43	Pediculus humanus corporis	Louse	5	Arthropods	A
+44	Ixodes scapularis	Tick	5	Arthropods	A
+45	Daphnia pulex	Flea	5	Arthropods	A
+46	Drosophila melanogaster	Drosophila	5	Arthropods	A
+47	Tribolium castaneum	Red flour beetle	5	Arthropods	A
+48	Apis mellifera	Bee	5	Arthropods	A
+49	Bombus terrestris	Bumblebee	5	Arthropods	A
+50	Anopheles gambiae str. PEST	Malaria Mosquito	5	Arthropods	A
+51	Bombyx mori	Silkworm	5	Arthropods	A
+52	Aedes aegypti	Yellow Fever Mosquito	5	Arthropods	A
+53	Culex quinquefasciatus	Lymphatic Filariasis Mosquito	5	Arthropods	A
+54	Nasonia vitripennis	Wasp	5	Arthropods	A
+55	Caenorhabditis elegans	C.elegans	6	Nematodes	N
+56	Schistosoma mansoni	Schistosoma Trematode	6	Nematodes	N
+57	Brugia malayi	Brugia Nematode	6	Nematodes	N
+58	Clonorchis sinensis	Liver Fluke	6	Nematodes	N
+59	Loa loa	Loa Loa Nematode	6	Nematodes	N
+60	Trichinella spiralis	Trichinella Nematode	6	Nematodes	N
+61	Nematostella vectensis	Sea Anemone	7	Cnidaria	C
+62	Hydra magnipapillata	Hydra	7	Cnidaria	C
+63	Trichoplax adhaerens	Trichoplax	8	Sponge/Placozoa	SP
+64	Amphimedon queenslandica	Sponge	8	Sponge/Placozoa	SP
+65	Salpingoeca sp.atcc50818	Salpingoeca Choanoflagellate	9	Choanoflagellates	CF
+66	Capsaspora owczarzaki	Capsaspora	9	Choanoflagellates	CF
+67	Monosiga brevicollis mx1	Monosiga Choanoflagellate	9	Choanoflagellates	CF
+68	Batrachochytrium dendrobatidis jam81	Batrachochytrium dendrobatidis	10	Fungi	F
+69	Rhizopus delemar	Rhizopus delemar	10	Fungi	F
+70	Eremothecium cymbalariae DBVPG#7215	Eremothecium cymbalariae	10	Fungi	F
+71	Ashbya gossypii ATCC 10895	Ashbya gossypii	10	Fungi	F
+72	Torulaspora delbrueckii	Torulaspora delbrueckii	10	Fungi	F
+73	Encephalitozoon cuniculi GB-M1	Encephalitozoon cuniculi	10	Fungi	F
+74	Podospora anserina S mat+	Podospora anserina	10	Fungi	F
+75	Verticillium albo-atrum VaMs.102	Verticillium albo-atrum	10	Fungi	F
+76	Candida albicans	Candida albicans	10	Fungi	F
+77	Neurospora crassa OR74A	Neurospora crassa	10	Fungi	F
+78	Sordaria macrospora	Sordaria macrospora	10	Fungi	F
+79	Zygosaccharomyces rouxii CBS 732	Zygosaccharomyces rouxii	10	Fungi	F
+80	Rhodosporidium toruloides np11	Rhodosporidium toruloides	10	Fungi	F
+81	Myceliophthora thermophila ATCC 42464	Myceliophthora thermophila	10	Fungi	F
+82	Naumovozyma castellii CBS 4309	Naumovozyma castellii	10	Fungi	F
+83	Vanderwaltozyma polyspora DSM 70294	Vanderwaltozyma polyspora	10	Fungi	F
+84	Talaromyces stipitatus ATCC 10500	Talaromyces stipitatus	10	Fungi	F
+85	Pneumocystis jirovecii	Pneumocystis jirovecii	10	Fungi	F
+86	Botryotinia fuckeliana	Botryotinia fuckeliana	10	Fungi	F
+87	Puccinia graminis f. sp. tritici	Puccinia graminis	10	Fungi	F
+88	Thielavia terrestris NRRL 8126	Thielavia terrestris	10	Fungi	F
+89	Nosema ceranae BRL01	Nosema ceranae	10	Fungi	F
+90	Melampsora larici-populina 98ag31	Melampsora larici-populina	10	Fungi	F
+91	Gibberella zeae PH-1 (Fusarium)	Gibberella zeae	10	Fungi	F
+92	Chaetomium globosum CBS 148.51	Chaetomium globosum	10	Fungi	F
+93	Magnaporthe oryzae 70-15	Magnaporthe oryzae	10	Fungi	F
+94	Tuber melanosporum	Tuber melanosporum	10	Fungi	F
+95	Schizosaccharomyces pombe	Schizosaccharomyces pombe	10	Fungi	F
+96	Sclerotinia sclerotiorum 1980 UF-70	Sclerotinia sclerotiorum	10	Fungi	F
+97	Schizophyllum commune H4-8	Schizophyllum commune	10	Fungi	F
+98	Neosartorya fischeri NRRL 181	Neosartorya fischeri	10	Fungi	F
+99	Phaeosphaeria nodorum SN15	Phaeosphaeria nodorum	10	Fungi	F
+100	Postia placenta	Postia placenta	10	Fungi	F
+101	Ustilago maydis	Ustilago maydis	10	Fungi	F
+102	Enterocytozoon bieneusi h348	Enterocytozoon bieneusi	10	Fungi	F
+103	Malassezia globosa	Malassezia globosa	10	Fungi	F
+104	Pyrenophora teres f. teres 0-1	Pyrenophora teres	10	Fungi	F
+105	Aspergillus nidulans FGSC A4	Aspergillus nidulans	10	Fungi	F
+106	Moniliophthora perniciosa FA553	Moniliophthora perniciosa	10	Fungi	F
+107	Laccaria bicolor s238n-h82	Laccaria bicolor	10	Fungi	F
+108	Cryptococcus neoformans jec21	Cryptococcus neoformans	10	Fungi	F
+109	Ajellomyces dermatitidis SLH14081	Ajellomyces dermatitidis	10	Fungi	F
+110	Uncinocarpus reesii 1704	Uncinocarpus reesii	10	Fungi	F
+111	Nectria haematococca mpVI 77-13-4	Nectria haematococca	10	Fungi	F
+112	Arthroderma gypseum CBS 118893	Arthroderma gypseum	10	Fungi	F
+113	Trichophyton rubrum CBS 118892	Trichophyton rubrum	10	Fungi	F
+114	Paracoccidioides brasiliensis Pb01	Paracoccidioides brasiliensis	10	Fungi	F
+115	Clavispora lusitaniae ATCC 42720	Clavispora lusitaniae	10	Fungi	F
+116	Coccidioides posadasii C735 delta SOWgp	Coccidioides posadasii	10	Fungi	F
+117	Komagataella pastoris GS115	Komagataella pastoris	10	Fungi	F
+118	Meyerozyma guilliermondii ATCC 6260	Meyerozyma guilliermondii	10	Fungi	F
+119	Tetrapisispora phaffii CBS 4417	Tetrapisispora phaffii	10	Fungi	F
+120	Lachancea thermotolerans CBS 6340	Lachancea thermotolerans	10	Fungi	F
+121	Scheffersomyces stipitis CBS 6054	Scheffersomyces stipitis	10	Fungi	F
+122	Yarrowia lipolytica	Yarrowia lipolytica	10	Fungi	F
+123	Saccharomyces cerevisiae s288c	Saccharomyces cerevisiae	10	Fungi	F
+124	Debaryomyces hansenii CBS767	Debaryomyces hansenii	10	Fungi	F
+125	Polysphondylium pallidum pn500	Polysphondylium pallidum	11	Amoebozoa	AB
+126	Entamoeba dispar SAW760	Entamoeba dispar	11	Amoebozoa	AB
+127	Acanthamoeba castellanii str.neff	Acanthamoeba castellanii	11	Amoebozoa	AB
+128	Entamoeba histolytica hm-1:imss	Entamoeba histolytica	11	Amoebozoa	AB
+129	Dictyostelium discoideum ax4	Dictyostelium discoideum	11	Amoebozoa	AB
+130	Medicago truncatula	Clover	12	Plantae	P
+131	Vitis vinifera	Grape	12	Plantae	P
+132	Glycine max	Soybean	12	Plantae	P
+133	Brachypodium distachyon	Grass	12	Plantae	P
+134	Zea mays	Maize	12	Plantae	P
+135	Populus trichocarpa	Poplar	12	Plantae	P
+136	Oryza sativa japonica group	Rice	12	Plantae	P
+137	Ricinus communis	Ricinus	12	Plantae	P
+138	Sorghum bicolor	Sorghum	12	Plantae	P
+139	Arabidopsis thaliana	Tobacco	12	Plantae	P
+140	Selaginella moellendorffii	Selaginella	12	Plantae	P
+141	Physcomitrella patens subsp.patens	Moss	12	Plantae	P
+142	Chlamydomonas reinhardtii	Chlamydomonas	12	Plantae	P
+143	Volvox carteri	Volvox	12	Plantae	P
+144	Coccomyxa subellipsoidea c-169	Coccomyxa subellipsoidea	12	Plantae	P
+145	Ostreococcus tauri	Ostreococcus alga	12	Plantae	P
+146	Micromonas pusilla ccmp1545	Micromonas	12	Plantae	P
+147	Chlorella variabilis	Chlorella	12	Plantae	P
+148	Naegleria gruberi	Naegleria gruberi	13	Other protists	PR
+149	Ichthyophthirius multifiliis	Ichthyophthirius multifiliis	13	Other protists	PR
+150	Hemiselmis andersenii	Hemiselmis andersenii	13	Other protists	PR
+151	Ectocarpus siliculosus	Ectocarpus siliculosus	13	Other protists	PR
+152	Oxytricha trifallax	Oxytricha trifallax	13	Other protists	PR
+153	Bigelowiella natans	Bigelowiella natans	13	Other protists	PR
+154	Guillardia theta ccmp2712	Guillardia theta	13	Other protists	PR
+155	Aureococcus anophagefferens	Aureococcus anophagefferens	13	Other protists	PR
+156	Blastocystis hominis	Blastocystis hominis	13	Other protists	PR
+157	Neospora caninum liverpool	Neospora caninum	13	Other protists	PR
+158	Babesia bovis	Babesia bovis	13	Other protists	PR
+159	Theileria parva	Theileria parva	13	Other protists	PR
+160	Phaeodactylum tricornutum	Phaeodactylum tricornutum	13	Other protists	PR
+161	Thalassiosira oceanica	Thalassiosira oceanica	13	Other protists	PR
+162	Cyanidioschyzon merolae	Cyanidioschyzon merolae	13	Other protists	PR
+163	Cryptomonas paramecium	Cryptomonas paramecium	13	Other protists	PR
+164	Galdieria sulphuraria	Galdieria sulphuraria	13	Other protists	PR
+165	Phytophthora infestans	Phytophthora infestans	13	Other protists	PR
+166	Leishmania major	Leishmania major	13	Other protists	PR
+167	Giardia lamblia	Giardia lamblia	13	Other protists	PR
+168	Tetrahymena thermophila	Tetrahymena thermophila	13	Other protists	PR
+169	Perkinsus marinus	Perkinsus marinus	13	Other protists	PR
+170	Cryptosporidium parvum	Cryptosporidium parvum	13	Other protists	PR
+171	Toxoplasma gondii me49	Toxoplasma gondii	13	Other protists	PR
+172	Plasmodium falciparum 3d7	Plasmodium falciparum	13	Other protists	PR
+173	Nematocida parisii	Nematocida parisii	13	Other protists	PR
+174	Paramecium tetraurelia	Paramecium tetraurelia	13	Other protists	PR
+175	Trichomonas vaginalis	Trichomonas vaginalis	13	Other protists	PR
+176	Trypanosoma cruzi	Trypanosoma cruzi	13	Other protists	PR
+177	Paulinella chromatophora	Paulinella chromatophora	13	Other protists	PR
