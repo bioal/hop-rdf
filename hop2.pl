@@ -54,6 +54,7 @@ print '@prefix orth: <http://purl.org/net/orth#> .' . "\n";
 print '@prefix hop: ', "<${NAME_SPACE}ontology#> .\n";
 print '@prefix group: ', "<${NAME_SPACE}group/> .\n";
 print '@prefix organism: ', "<${NAME_SPACE}organism/> .\n";
+print '@prefix branch: ', "<${NAME_SPACE}branch/> .\n";
 print "\n";
 
 print "<$NAME_SPACE>\n";
@@ -119,6 +120,35 @@ sub organism_to_ttl {
 	print "    a orth:Organism ;\n";
 	print "    dct:identifier $organism_no ;\n";
 	print "    rdfs:label \"$scientific_name\" ;\n";
+    my $branch_no;
+    if ($organism_no <= 25) {
+        $branch_no = 1;
+    } elsif ($organism_no <= 34) {
+        $branch_no = 2;
+    } elsif ($organism_no <= 37) {
+        $branch_no = 3;
+    } elsif ($organism_no <= 41) {
+        $branch_no = 4;
+    } elsif ($organism_no <= 54) {
+        $branch_no = 5;
+    } elsif ($organism_no <= 60) {
+        $branch_no = 6;
+    } elsif ($organism_no <= 62) {
+        $branch_no = 7;
+    } elsif ($organism_no <= 64) {
+        $branch_no = 8;
+    } elsif ($organism_no <= 67) {
+        $branch_no = 9;
+    } elsif ($organism_no <= 124) {
+        $branch_no = 10;
+    } elsif ($organism_no <= 129) {
+        $branch_no = 11;
+    } elsif ($organism_no <= 147) {
+        $branch_no = 12;
+    } else {
+        $branch_no = 13;
+    }
+    print "    hop:branch branch:$branch_no ;\n";
 	if ($TIME{$organism_no}) {
 	    print "    hop:branchTimeMya \"$TIME{$organism_no}\"^^xsd:decimal ;\n";
 	}
@@ -129,6 +159,58 @@ sub organism_to_ttl {
 	$n_organism ++;
     }
     close(ORGANISM);
+
+    print "branch:1 a hop:Branch ;\n";
+    print "    rdfs:label \"Mammals\".\n";
+	print "\n";
+
+    print "branch:2 a hop:Branch ;\n";
+    print "    rdfs:label \"Other vertebrates\".\n";
+	print "\n";
+
+    print "branch:3 a hop:Branch ;\n";
+    print "    rdfs:label \"Lancelets/tunicates\".\n";
+	print "\n";
+
+    print "branch:4 a hop:Branch ;\n";
+    print "    rdfs:label \"Echinoderms/hemichordata\".\n";
+	print "\n";
+
+    print "branch:5 a hop:Branch ;\n";
+    print "    rdfs:label \"Arthropods\".\n";
+	print "\n";
+
+    print "branch:6 a hop:Branch ;\n";
+    print "    rdfs:label \"Nematodes\".\n";
+	print "\n";
+
+    print "branch:7 a hop:Branch ;\n";
+    print "    rdfs:label \"Cnidaria\".\n";
+	print "\n";
+
+    print "branch:8 a hop:Branch ;\n";
+    print "    rdfs:label \"Sponge/Placozoa\".\n";
+	print "\n";
+
+    print "branch:9 a hop:Branch ;\n";
+    print "    rdfs:label \"Choanoflagellates\".\n";
+	print "\n";
+
+    print "branch:10 a hop:Branch ;\n";
+    print "    rdfs:label \"Fungi\".\n";
+	print "\n";
+
+    print "branch:11 a hop:Branch ;\n";
+    print "    rdfs:label \"Amoebozoa\".\n";
+	print "\n";
+
+    print "branch:12 a hop:Branch ;\n";
+    print "    rdfs:label \"Plantae\".\n";
+	print "\n";
+
+    print "branch:13 a hop:Branch ;\n";
+    print "    rdfs:label \"Other protists\".\n";
+	print "\n";
 
     return $n_organism;
 }
