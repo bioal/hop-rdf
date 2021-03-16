@@ -7,7 +7,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX hop: <http://purl.org/net/orthordf/hOP/ontology#>
 PREFIX orth: <http://purl.org/net/orth#>
 
-SELECT ?branch ?branch_label (COUNT(DISTINCT ?gene) AS ?count)
+SELECT ?branch_id ?branch ?branch_label (COUNT(DISTINCT ?gene) AS ?count)
 WHERE {
   {
     SELECT ?gene ?branch ?branch_label
