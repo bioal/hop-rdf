@@ -1,0 +1,29 @@
+#!/usr/bin/env spang2
+# @endpoint orthodev
+# @option --time -c
+
+PREFIX orth: <http://purl.org/net/orth#>
+
+SELECT ?branch ?branch_label (COUNT(DISTINCT ?gene) AS ?count)
+WHERE {
+  {
+    SELECT ?gene ?branch ?branch_label
+    WHERE {
+      {
+        SELECT ?grp ?gene (max(?org_id) as ?max_id)
+        WHERE {
+          ?grp orth:inDataset <http://purl.org/net/orthordf/hOP/> ;
+              orth:hasHomologousMember ?gene ;
+              orth:organism ?org .
+          ?org dct:identifier ?org_id .
+        }
+      }  
+      BIND(URI(CONCAT("http://purl.org/net/orthordf/hOP/organism/", ?max_id)) AS ?max_org)
+      ?max_org hop:branch ?branch .
+      ?branch a hop:Branch ;
+         rdfs:label ?branch_label .
+    }
+  }
+  BIND(xsd:integer(replace(str(?branch), "http://purl.org/net/orthordf/hOP/branch/", "")) AS ?branch_id)
+}
+ORDER BY ?branch_id
