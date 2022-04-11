@@ -43,21 +43,21 @@ if (-f $TIME_TREE_FILE) {
     close(TIME_TREE);
 }
 
-my $NAME_SPACE = "http://purl.org/net/orthordf/hOP";
+my $NAME_SPACE = "http://purl.org/net/orthordf/hOP/";
 
 ### Output header ###
 print '@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .' . "\n";
-print '@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .' . "\n";
 print '@prefix dct: <http://purl.org/dc/terms/> .' . "\n";
-print '@prefix orth: <http://purl.jp/bio/11/orth#> .' . "\n";
-print '@prefix hop: ', "<${NAME_SPACE}/ontology#> .\n";
-print '@prefix group: ', "<${NAME_SPACE}/group/> .\n";
-print '@prefix organism: ', "<${NAME_SPACE}/organism/> .\n";
-print '@prefix gene: ', "<http://identifiers.org/ncbigene/> .\n";
+print '@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .' . "\n";
+print '@prefix ncbigene: ', "<http://identifiers.org/ncbigene/> .\n";
+print '@prefix orth: <http://purl.org/net/orth#> .' . "\n";
+print '@prefix hop: ', "<${NAME_SPACE}ontology#> .\n";
+print '@prefix group: ', "<${NAME_SPACE}group/> .\n";
+print '@prefix organism: ', "<${NAME_SPACE}organism/> .\n";
 print "\n";
 
 print "<$NAME_SPACE>\n";
-print "    a orth:Dataset ;\n";
+print "    a orth:OrthologyDataset ;\n";
 print "    dct:title \"Human orthogroup phylogenetic (hOP) profiles\" ;\n";
 print "    dct:source <http://web.stanford.edu/group/meyerlab/hOPMAPServer/index.html> ;\n";
 print "    dct:description \"RDF version of human orthogroup phylogenetic (hOP) profiles is created from the original database.\" ;\n";
@@ -136,7 +136,7 @@ sub organism_to_ttl {
 sub print_gene_ttl {
     my ($gene_id, $gene_name) = @_;
 
-    print "gene:$gene_id\n";
+    print "ncbigene:$gene_id\n";
     print "    a orth:Gene ;\n";
     print "    dct:identifier $gene_id ;\n";
     print "    rdfs:label \"$gene_name\" .\n";
@@ -167,14 +167,15 @@ sub print_profile {
     }
     my @member_uri = ();
     for my $member (@{${$r_member}{$group_no}}) {
-	push @member_uri, "gene:$member";
+	push @member_uri, "ncbigene:$member";
     }
 
     print "group:$group_no\n";
-    print "    a orth:OrthologGroup ;\n";
+    print "    a orth:OrthologsCluster ;\n";
+    print "    orth:inDataset <$NAME_SPACE> ;\n";
     print "    dct:identifier $group_no ;\n";
     print "    rdfs:label \"$label\" ;\n";
-    print "    orth:member ", join(" ,\n                ", @member_uri), " ;\n";
+    print "    orth:hasHomologousMember ", join(" ,\n                ", @member_uri), " ;\n";
     print "    orth:organism ", join(" ,\n                  ", @organism_uri), " .\n";
     print "\n";
 }
