@@ -1,13 +1,13 @@
 #!/usr/bin/env spang2
 # @endpoint https://orth.dbcls.jp/sparql-dev
-# @option --time -c
+# @option --time -vc
 
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX hop: <http://purl.org/net/orthordf/hOP/ontology#>
 PREFIX orth: <http://purl.org/net/orth#>
+PREFIX hop: <http://purl.org/net/orthordf/hOP/ontology#>
 
-SELECT ?branch_id ?branch ?branch_label (COUNT(DISTINCT ?gene) AS ?count)
+SELECT ?branch_label (COUNT(DISTINCT ?gene) AS ?count)
 WHERE {
   {
     SELECT ?gene ?branch ?branch_label
